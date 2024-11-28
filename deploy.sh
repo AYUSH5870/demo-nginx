@@ -2,7 +2,7 @@
 
 eksctl create cluster -f cluster.yaml --kubeconfig kubeconfig
 
-kubectl --kubeconfig ./kubeconfig apply -f ./run-my-nginx.yaml 
+kubectl --kubeconfig ./kubeconfig apply -f ./run-demo-nginx.yaml 
 
 # expose the nginx containers
 kubectl --kubeconfig ./kubeconfig expose deployment/demo-nginx \
