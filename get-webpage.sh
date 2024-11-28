@@ -1,5 +1,5 @@
 #!/bin/bash
-kubectl --kubeconfig ./kubeconfig get svc my-nginx-service
+kubectl --kubeconfig ./kubeconfig get svc demo-nginx-service
 
 lb_url="$(kubectl --kubeconfig ./kubeconfig get svc my-nginx-service | \
             grep my-nginx-service | \
